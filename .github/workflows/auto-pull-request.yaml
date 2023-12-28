@@ -1,0 +1,21 @@
+name: Auto Pull Requests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-pull-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: text-content-safety
+          commit-message: "Automated pull request"
