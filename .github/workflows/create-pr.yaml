@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Create main branch PR
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        base: main
-        branch: text-content-safety
-        title: "Merge text-content-safety into main"
-        body: "This PR merges changes from text-content-safety into main."
+      - name: Create main branch PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: text-content-safety
+          title: "Merge text-content-safety into main"
+          body: "This PR merges changes from text-content-safety into main."
