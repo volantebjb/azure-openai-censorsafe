@@ -14,4 +14,4 @@ CensorSafe is a Jupyter project that demonstrates the usage of Azure Content Saf
 
 CensorSafe provides a hands-on experience with Responsible AI principles, helping developers create applications that prioritize user safety and maintain a positive user experience.
 
-For more details on Responsible AI, refer to the [Responsible AI Hub](https://azure.github.io/responsible-ai-hub).
+For more details on Responsible AI, refer to the [Responsible AI Hub](https://azure.github.io/responsible-ai-hub/).
