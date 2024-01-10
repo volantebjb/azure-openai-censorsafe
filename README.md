@@ -7,10 +7,10 @@ CensorSafe is a Jupyter project that demonstrates the usage of Azure Content Saf
 ## Key Features
 
 ### Image Analysis
-- Image analysis code is included in the notebook (`image_analysis.ipynb`). It demonstrates how to analyze an image for content safety.
+- Image analysis code is included in the notebook (`image.ipynb`). It demonstrates how to analyze an image for content safety.
 
 ### Text Analysis
-- Text analysis code is included in the notebook (`text_analysis.ipynb`). It demonstrates how to analyze text for content safety.
+- Text analysis code is included in the notebook (`text.ipynb`). It demonstrates how to analyze text for content safety.
 
 CensorSafe provides a hands-on experience with Responsible AI principles, helping developers create applications that prioritize user safety and maintain a positive user experience.
 
