@@ -30,7 +30,6 @@ def analyze_text():
     if request.method == 'POST':
         input_text = request.form['text']
         
-        # Your existing text analysis code here
         analyze_request = AnalyzeTextOptions(text=input_text)
         try:
             response = client.analyze_text(analyze_request)
@@ -67,10 +66,9 @@ def analyze_image():
         uploaded_file = request.files['image']
 
         # Save the uploaded file to a temporary location
-        temp_file_path = 'temp_image.jpg'  # You may want to use a more secure way to handle temporary files
+        temp_file_path = '.temp/temp_image.jpg'  # You may want to use a more secure way to handle temporary files
         uploaded_file.save(temp_file_path)
 
-        # Your existing image analysis code here
         with open(temp_file_path, "rb") as file:
             img_request = AnalyzeImageOptions(image=ImageData(content=file.read()))
         try:

@@ -2,16 +2,27 @@
 
 ![CensorSafe](./docs/censorsafe.jpg)
 
-CensorSafe is a Jupyter project that demonstrates the usage of Azure Content Safety services to ensure that text or images in applications are free from content that includes violence, self-harm, hate, or sexual information.
+CensorSafe is a basic web application that utilizes the Azure Content Safety API to analyze text and images for potential offensive content. The application is built using Flask, a web framework for Python.
 
-## Key Features
+## Prerequisites
+Before running the application, ensure you have the necessary dependencies installed. You can install them using:
 
-### Image Analysis
-- Image analysis code is included in the notebook (`image.ipynb`). It demonstrates how to analyze an image for content safety.
+```bash
+pip install Flask python-dotenv azure-ai-contentsafety
+```
+Create a .env file in the project directory and provide your Azure Content Safety API endpoint and key:
 
-### Text Analysis
-- Text analysis code is included in the notebook (`text.ipynb`). It demonstrates how to analyze text for content safety.
+```env
+AZURE_CONTENTSAFETY_ENDPOINT=your_endpoint_url
+AZURE_CONTENTSAFETY_KEY=your_api_key
+```
 
-CensorSafe provides a hands-on experience with Responsible AI principles, helping developers create applications that prioritize user safety and maintain a positive user experience.
+## Usage
+Run the application:
+```bash
+python app.py
+```
 
-For more details on Responsible AI, refer to the [Responsible AI Hub](https://azure.github.io/responsible-ai-hub/).
+Open your web browser and go to http://localhost:5000.
+
+Enter text or upload an image to analyze.
