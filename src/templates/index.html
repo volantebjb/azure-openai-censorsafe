@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Content Safety Analyzer</title>
+</head>
+<body>
+    <h1>Welcome to the Content Safety Analyzer</h1>
+    <form action="/analyze_text" method="post">
+        <label for="text">Enter text:</label>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Analyze Text</button>
+    </form>
+    <form action="/analyze_image" method="post" enctype="multipart/form-data">
+        <label for="image">Upload image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <button type="submit">Analyze Image</button>
+    </form>
+</body>
+</html>

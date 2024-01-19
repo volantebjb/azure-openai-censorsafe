@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    {% if hate_result %}
+        <p>Hate severity: {{ hate_result.severity }}</p>
+    {% endif %}
+    {% if self_harm_result %}
+        <p>Self-Harm severity: {{ self_harm_result.severity }}</p>
+    {% endif %}
+    {% if sexual_result %}
+        <p>Sexual severity: {{ sexual_result.severity }}</p>
+    {% endif %}
+    {% if violence_result %}
+        <p>Violence severity: {{ violence_result.severity }}</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
