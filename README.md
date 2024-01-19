@@ -8,8 +8,9 @@ CensorSafe is a basic web application that utilizes the Azure Content Safety API
 Before running the application, ensure you have the necessary dependencies installed. You can install them using:
 
 ```bash
-pip install Flask python-dotenv azure-ai-contentsafety
+pip install -r lib/requirements.txt
 ```
+
 Create a .env file in the project directory and provide your Azure Content Safety API endpoint and key:
 
 ```env
